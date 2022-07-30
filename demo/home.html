@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Quiz</title>
+    <link rel="stylesheet" type="text/css" href="../dist/jquery.quiz-min.css" />
+  </head>
+  <body>
+    <div class="flex_container">
+      <div class="center_Box">
+      <div id="quiz">
+        <div id="quiz-header">
+          <h1>Basic Quiz Demo</h1>
+          <p><a id="quiz-home-btn">Home</a></p>
+        </div>
+        <div id="quiz-start-screen">
+          <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="../dist/jquery.quiz-min.js"></script>
+    <script>
+      $("#quiz").quiz({
+        //resultsScreen: '#results-screen',
+        //counter: false,
+        //homeButton: '#custom-home',
+        counterFormat: "Question %current of %total",
+        questions: [
+          {
+            q: "How many proper subsets of {1, 2, 3, 4, 5, 6, 7} contain the numbers 1 and 7?  NIMCET [2010]",
+            options: ["7", "31", "32", "62"],
+            correctIndex: 1,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: "The average marks of boys in class is 52 and that of girls to 42. The average marks of boys and girls combined is 50, then percentage of boys in the class is   NIMCET [2016]",
+            options: ["80%", "60%", "40%", "20%"],
+            correctIndex: 0,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20161.PNG"> NIMCET [2016]',
+            options: ["A", "B", "C", "D"],
+            correctIndex: 0,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20162.PNG"> NIMCET [2016]',
+            options: ["A", "B", "C", "D"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20163.PNG"> NIMCET [2016]',
+            options: ["A", "B", "C", "D"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20191.PNG"> NIMCET [2019]',
+            options: ["A", "B", "C", "D"],
+            correctIndex: 3,
+            correctResponse: '<img src="../IMG/SET/201911.PNG">',
+            incorrectResponse: '<img src="../IMG/SET/201911.PNG">',
+          },
+          {
+            q: '<img src="../IMG/SET/20201.PNG"> NIMCET [2020]',
+            options: ["A", "B", "C", "D"],
+            correctIndex: 0,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: "In a city, 40.1% of the adults are illiterate while 85.1% of the children are literate. If the ratio of the adults to that of the children is 2:3, then what percent of the population is literate? NIMCET [2020]",
+            options: ["20%", "25%", "50%", "75%"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20202.PNG"> NIMCET [2020]',
+            options: [
+              "(A) Cardinality of C",
+              "(B) Cardinality of B",
+              "(C) Cardinality of A",
+              "(D) None of the above",
+            ],
+            correctIndex: 0,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20211.PNG"> NIMCET [2021]',
+            options: ["(A) 18", "(B) 20", "(C) 24", "(D) 30"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20212.PNG"> (*WRONG QUESTION*) NIMCET [2021]',
+            options: ["(A) 18", "(B) 20", "(C) 24", "(D) 30"],
+            correctIndex: 1,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20081.PNG">  NIMCET [2008]',
+            options: ["(A) 15", "(B) 3", "(C) 45", "(D) NONE OF THESE"],
+            correctIndex: 2,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20091.PNG">  NIMCET [2009]',
+            options: ["(A) ", "(B) ", "(C) ", "(D)"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20092.PNG">  NIMCET [2009]',
+            options: ["(A) 28", "(B) 21", "(C) 15", "(D) 6"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20093.PNG">  NIMCET [2009]',
+            options: ["(A) 15", "(B) 17", "(C) 16", "(D) 18"],
+            correctIndex: 2,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+          {
+            q: '<img src="../IMG/SET/20094.PNG">  NIMCET [2009]',
+            options: ["(A) 10", "(B) 12", "(C) 9", "(D) NONE OF THESE"],
+            correctIndex: 3,
+            correctResponse: "Answers Will Be Added Soon..",
+            incorrectResponse: "Answers Will Be Added Soon..",
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
